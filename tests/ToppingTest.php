@@ -18,12 +18,12 @@ class ToppingTest extends TestCase
     }
 
     /** @test */
-    public function it_fetches_a_list_of_pizzas()
+    public function it_fetches_a_list_of_toppings()
     {
         $toppings_count = Topping::count();
 
         if ($toppings_count === 0)
-            factory(Topping::class, 10);
+            factory(Topping::class, 10)->create();
 
         $toppings = Topping::all();
 

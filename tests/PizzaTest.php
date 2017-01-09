@@ -10,7 +10,7 @@ class PizzaTest extends TestCase
 {
 
     use DatabaseTransactions;
-    
+
     /** @test */
     public function it_creates_a_pizza()
     {
@@ -23,9 +23,9 @@ class PizzaTest extends TestCase
     public function it_fetches_a_list_of_pizzas()
     {
         $pizzas_count = Pizza::count();
-        
+
         if ($pizzas_count === 0)
-            factory(Pizza::class, 10);
+            factory(Pizza::class, 10)->create();
 
         $pizzas = Pizza::all();
 
