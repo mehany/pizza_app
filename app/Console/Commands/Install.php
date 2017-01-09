@@ -41,6 +41,7 @@ class Install extends Command
         //exec('php artisan key:generate && touch database/database.sqlite && php artisan migrate');
 
         $tasks = [
+            "php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             'php artisan key:generate',
             'touch database/database.sqlite',
             'php artisan migrate:refresh'
