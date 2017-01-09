@@ -19,11 +19,11 @@ a description, and toppings.
 
 This will do the following:
 
-1- Install application dependencies.
-2- Generate a secret key.
-3- Creates a sqlite database inside "database" dir.
-4- Runs migrations.
-5- Test application with phpunit.
+1. Install application dependencies.
+2. Generate a secret key.
+3. Creates a sqlite database inside "database" dir.
+4. Runs migrations.
+5. Test application with phpunit.
 
 
 Satisfied Requirements
