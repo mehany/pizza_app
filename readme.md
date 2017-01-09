@@ -17,12 +17,14 @@ a description, and toppings.
 
 ``` composer install ```
 
+then :
+
+```php artisan install```
 This will do the following:
 
-1. Install application dependencies.
-2. Generate a secret key.
-3. Creates a sqlite database inside "database" dir.
-4. Runs migrations.
+1. Generate a secret key.
+2. Creates a sqlite database inside "database" dir.
+3. Runs migrations.
 
 
 # Testing

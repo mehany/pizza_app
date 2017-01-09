@@ -23,6 +23,7 @@ class PizzaTest extends TestCase
     public function it_fetches_a_list_of_pizzas()
     {
         $pizzas_count = Pizza::count();
+        
         if ($pizzas_count === 0)
             factory(Pizza::class, 10);
 
