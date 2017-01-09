@@ -43,8 +43,7 @@ class Install extends Command
         $tasks = [
             'php artisan key:generate',
             'touch database/database.sqlite',
-            'php artisan migrate:refresh',
-            './vendor/phpunit/phpunit/phpunit',
+            'php artisan migrate:refresh'
         ];
 
         $bar = $this->output->createProgressBar(count($tasks));
