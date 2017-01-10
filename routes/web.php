@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/make-your-pizza', function () {
+    return view('pizza');
+});
+
 Route::post('pizzas/{pizza_id}/toppings', 'PizzaController@addToppings');
 
 Route::get('pizzas/{pizza_id}/toppings', 'PizzaController@getToppings');
@@ -22,3 +26,7 @@ Route::get('pizzas/{pizza_id}/toppings', 'PizzaController@getToppings');
 Route::resource('pizzas', 'PizzaController');
 
 Route::resource('toppings', 'ToppingController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

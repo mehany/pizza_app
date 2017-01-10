@@ -1,0 +1,18 @@
+.pizza-pie{
+  max-width: 500px;
+  .pizza-edges,
+  .green-peper,
+  .pepperoni-dark,
+  .pepperoni,
+  .beef,
+  .tomatoes,
+  .olives,
+  .pizza-back-cover,
+  .pizza-back-cover-edge {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    &.added{
+      opacity: 1;
+    }
+  }
+}

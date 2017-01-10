@@ -61,7 +61,7 @@ you can also prefix routes with ```api/```
 
 *Example curl command to create a pizza:*
 ```
-curl -H "Content-Type: application/json" -H "Accept: application/json" https://pizzaserver.herokuapp.com/pizzas --data '{"pizza": {"name": "belleboche", "description": "Pepperoni, Sausage, Mushroom"}}'
+curl -H "Content-Type: application/json" -H "Accept: application/json" https://pizza.mehany.io/pizzas --data '{"pizza": {"name": "belleboche", "description": "Pepperoni, Sausage, Mushroom"}}'
 ```
 
 Pizza
@@ -101,3 +101,4 @@ POST /pizzas/:pizza_id/toppings, {topping_id: 1}
 GET  /pizzas/:pizza_id/toppings
 ```
 
+$ ./certbot-auto certonly --webroot -w /home/forge/pizza.mehany.io/html -d pizza.mehany.io

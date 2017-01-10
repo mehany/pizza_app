@@ -13,9 +13,12 @@ require('./bootstrap');
  * the application, or feel free to tweak this setup for your needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
+Vue.component('menu', require('./components/Menu.vue'));
+Vue.component('pizza', require('./components/Pizza.vue'));
+Vue.component('toppings', require('./components/Toppings.vue'));
+Vue.component('order', require('./components/Order.vue'));
 
-const app = new Vue({
+const app = new Vue({ 
     el: 'body'
 });
 
