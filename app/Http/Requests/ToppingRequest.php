@@ -23,6 +23,11 @@ class ToppingRequest extends FormRequest
      */
     public function rules()
     {
+        if($this->request->has('topping')) {
+            return [
+                'topping.name' => 'required|max:255'
+            ];
+        }
         return [
             'name' => 'required|unique:toppings|max:255'
         ];
@@ -36,6 +41,7 @@ class ToppingRequest extends FormRequest
     public function messages()
     {
         return [
+            'topping.name.required' => 'A name is required for a topping',
             'name.required' => 'A name is required for a topping',
             'name.unique'  => 'A topping exists already with this name',
         ];

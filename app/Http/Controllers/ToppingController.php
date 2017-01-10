@@ -38,7 +38,12 @@ class ToppingController extends Controller
      */
     public function store(ToppingRequest $request)
     {
-        $topping = Topping::create($request->input());
+        if($request->has('topping'))
+            $data = $request->get('topping');
+        else
+            $data = $request->input();
+
+        $topping = Topping::create($data);
 
         if($request->wantsJson()){
             return response()->json($topping);
