@@ -7693,28 +7693,40 @@ button.close {
 }
 
 .pizza-pie .pizza-edges,
-.pizza-pie .green-peper,
+.pizza-pie .green-pepper,
+.pizza-pie .sweet-pepper,
+.pizza-pie .jalepeno,
 .pizza-pie .pepperoni-dark,
 .pizza-pie .pepperoni,
 .pizza-pie .beef,
 .pizza-pie .tomatoes,
+.pizza-pie .sausage,
+.pizza-pie .mushrooms,
+.pizza-pie .mushroom,
 .pizza-pie .olives,
 .pizza-pie .pizza-back-cover,
-.pizza-pie .pizza-back-cover-edge {
+.pizza-pie .pizza-back-cover-edge,
+.pizza-pie .pizza-extra-cheese {
   opacity: 0;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
 
 .pizza-pie .pizza-edges.added,
-.pizza-pie .green-peper.added,
+.pizza-pie .green-pepper.added,
+.pizza-pie .sweet-pepper.added,
+.pizza-pie .jalepeno.added,
 .pizza-pie .pepperoni-dark.added,
 .pizza-pie .pepperoni.added,
 .pizza-pie .beef.added,
 .pizza-pie .tomatoes.added,
+.pizza-pie .sausage.added,
+.pizza-pie .mushrooms.added,
+.pizza-pie .mushroom.added,
 .pizza-pie .olives.added,
 .pizza-pie .pizza-back-cover.added,
-.pizza-pie .pizza-back-cover-edge.added {
+.pizza-pie .pizza-back-cover-edge.added,
+.pizza-pie .pizza-extra-cheese.added {
   opacity: 1;
 }
 

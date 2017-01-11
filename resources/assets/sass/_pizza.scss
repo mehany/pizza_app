@@ -1,14 +1,21 @@
 .pizza-pie{
   max-width: 500px;
+
   .pizza-edges,
-  .green-peper,
+  .green-pepper,
+  .sweet-pepper,
+  .jalepeno,
   .pepperoni-dark,
   .pepperoni,
   .beef,
   .tomatoes,
+  .sausage,
+  .mushrooms,
+  .mushroom,
   .olives,
   .pizza-back-cover,
-  .pizza-back-cover-edge {
+  .pizza-back-cover-edge,
+  .pizza-extra-cheese{
     opacity: 0;
     transition: all 1s ease-in-out;
     &.added{

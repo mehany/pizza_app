@@ -4,6 +4,14 @@
 
         <div class="panel-body">
            <ul class="list-group toppings_list">
+                <li class="list-group-item" >
+                    Extra Cheese
+                <button class="badge" @click="addToPizza('pizza-extra-cheese')">Add </button>
+                </li>
+                <li class="list-group-item" >
+                    Pizza Edges
+                <button class="badge" @click="addToPizza('pizza-edges')">Add </button>
+                </li>
                 <li v-for="topping in toppings_list" class="list-group-item">
                  {{topping.name}}
                  <button class="badge" @click="addToPizza(topping.name)">Add </button>
@@ -47,7 +55,7 @@
                                                     // error callback
                                                   });
             },
-            addToPizza(className) {
+            addToPizza(className, event) {
                 className=className.toLowerCase();
                 className=className.replace(' ', '-');
                 $('.'+className).each(function(){

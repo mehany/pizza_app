@@ -15,6 +15,7 @@ require('./bootstrap');
 
 Vue.component('menu', require('./components/Menu.vue'));
 Vue.component('pizza', require('./components/Pizza.vue'));
+//Vue.component('pizza-slice', require('./components/PizzaSlice.vue'));
 Vue.component('toppings', require('./components/Toppings.vue'));
 Vue.component('order', require('./components/Order.vue'));
 

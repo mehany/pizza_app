@@ -79,7 +79,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
+                    <a href="https://github.com/mehany/pizza_app">Documentation</a>
                     <a href="/make-your-pizza">Create a Pizza</a>
                 </div>
             </div>
