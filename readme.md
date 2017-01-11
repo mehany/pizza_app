@@ -100,5 +100,3 @@ POST /pizzas/:pizza_id/toppings, {topping_id: 1}
 ```
 GET  /pizzas/:pizza_id/toppings
 ```
-
-$ ./certbot-auto certonly --webroot -w /home/forge/pizza.mehany.io/html -d pizza.mehany.io
